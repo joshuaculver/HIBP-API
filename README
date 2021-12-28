@@ -1,0 +1,16 @@
+### Password Breach Checker Using HIBP API
+
+The HIBPpass.py program takes a CSV file of passwords in SHA1 hash format and using the HIBP API v3 checks how many breaches all of the listed passwords have in HIBP's database. An output CSV is generated with the number of breaches associated with each password.
+
+The "requests" Python library is used. Password CSVs should use the first row for the field and one password per row for the rest. 
+
+to run:
+`py HIBPpass.py <filename of csv containing hashes>`
+
+Passwords listed in included password_hash.csv as SHA1 hashes:
+1. password
+2. 123456
+3. 123456789
+4. admin
+5. password
+
